@@ -25,9 +25,12 @@
         </li>
         <div class="pagination-container">
           <button @click="decrementCurrentPage">пред</button>
-          <h4>{{ getCurrentPageInPages }}</h4>
+          <button @click="currentPage = page" v-for="page in pages" :key="page">
+            {{ page }}
+          </button>
           <button @click="incrementCurrentPage">след</button>
         </div>
+        <h3>Выбранная страница {{ currentPage }}</h3>
       </div>
     </div>
   </div>
@@ -141,9 +144,11 @@ export default {
   display: flex;
   justify-content: center;
 }
+
 h4 {
   margin: 4px;
 }
+
 h2 {
   margin-bottom: 14px;
 }

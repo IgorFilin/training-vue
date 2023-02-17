@@ -1,13 +1,17 @@
 <template>
   <div class="app">
-    <user-card />
+    <my-input v-model="current" />
+    {{ current }}
   </div>
 </template>
 <script>
-import UserCard from "@/my-components/UserCard";
 export default {
   name: "App",
-  components: { UserCard },
+  data() {
+    return {
+      current: "1",
+    };
+  },
 };
 </script>
 <style>
