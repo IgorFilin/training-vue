@@ -1,9 +1,17 @@
 <template>
-  <div>Hello</div>
+  <div class="app">
+    <CountNumbers />
+  </div>
 </template>
 <script>
 export default {
   name: "App",
 };
 </script>
-<style></style>
+<style>
+.app {
+  width: 100%;
+  height: 100vh;
+  background: aliceblue;
+}
+</style>
