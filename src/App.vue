@@ -1,11 +1,13 @@
 <template>
   <div class="app">
-    <CountNumbers />
+    <user-card />
   </div>
 </template>
 <script>
+import UserCard from "@/my-components/UserCard";
 export default {
   name: "App",
+  components: { UserCard },
 };
 </script>
 <style>
